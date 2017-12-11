@@ -9,7 +9,7 @@ html, body {
   margin: 0;
 }
 .picture-box{
-  position: relative;
+
 }
 .picture-box img{
 width: 100%;
@@ -22,6 +22,15 @@ text-align: center;
 @keyframes fadein {
 from { opacity: 0; }
 to   { opacity: 1; }
+}
+.aboutmecontent1 img{
+position: sticky;
+width: 380px;
+height: 320px;
+border-radius: 50%;
+filter: grayscale(100%);
+margin-top: 7%;
+margin-bottom: 2%;
 }
 .picturetext1{
 position: absolute;
@@ -45,22 +54,20 @@ font-size: 4em;
   display: flex;
   background-color: #1a1a1a;
   margin-top: -20px;
+  width: 100%;
+  justify-content: center;
+
 }
-.aboutmecontent1 p{
-  color: white;
-  margin-top: 60px;
-  padding-left: 150px;
-  padding-right: 150px;
+.aboutmecontent1{
+  width: 60%;
   text-align: center;
-  padding-bottom: 300px;
+  color: white;
+  font-size: 1.2em;
+  padding-bottom: 245px;
 }
-.aboutmecontent2 p{
-  color: white;
-  margin-top: 60px;
-  padding-left: 150px;
-  padding-right: 150px;
-  text-align: center;
-  padding-bottom: 300px;
+.aboutmecontent1 h1{
+  font-size: 4em;
+  margin-bottom: 2%;
 }
 @media screen and (max-width: 768px) {
 .picturetext1{
@@ -68,6 +75,44 @@ font-size: 5em;
 }
 .picturetext2{
 font-size: 2em;
-top: 52%;
+top: 50%;
+}
+}
+@media screen and (max-width: 640px) {
+  .aboutmecontent1 img{
+  position: sticky;
+  width: 300px;
+  height: 260px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  margin-top: 7%;
+  margin-bottom: 5%;
+}
+@media screen and (max-width: 500px) {
+.aboutmecontent1 img{
+position: sticky;
+width: 170px;
+height: 140px;
+border-radius: 50%;
+filter: grayscale(100%);
+margin-top: 7%;
+margin-bottom: 5%;
+}
+.picturetext2{
+font-size: 2em;
+top: 53%;
+}
+.aboutmecontent1 p{
+font-size: 0.7em;
+}
+}
+@media screen and (max-width: 353px) {
+.picturetext1{
+font-size: 4em;
+top: 50%;
+}
+.picturetext2{
+font-size: 1.5em;
+top: 56%;
 }
 }
