@@ -68,12 +68,54 @@ font-size: 4em;
   font-size: 4em;
   margin-bottom: 2%;
 }
+.skills{
+  height: 100%;
+  width: 100%;
+}
+.skillscontent{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #404040;
+}
+.html1{
+  width: 25%;
+  height: 370px;
+  margin-top: 150px;
+}
+.css1{
+  width: 25%;
+  height: 370px;
+  margin-top: 150px;
+}
+.js1{
+  width: 25%;
+  height: 370px;
+  margin-top:150px;
+}
 @media screen and (max-width: 768px) {
 .picturetext1{
 font-size: 5em;
 }
 .picturetext2{
 font-size: 2em;
+top: 50%;
+}
+.skillscontent img{
+  position: sticky;
+  height: 23%;
+  width: 13%;
+  margin-top: 20%;
+  margin-bottom: 2%;
+}
+}
+@media screen and (max-width: 768px) {
+.picturetext1{
+font-size: 5em;
+}
+.picturetext2{
+font-size: 1.5em;
 top: 50%;
 }
 }
@@ -86,6 +128,7 @@ top: 50%;
   filter: grayscale(100%);
   margin-top: 7%;
   margin-bottom: 5%;
+}
 }
 @media screen and (max-width: 500px) {
 .aboutmecontent1 img{
