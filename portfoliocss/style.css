@@ -4,6 +4,7 @@ html, body {
   padding: 0;
   border: 0;
 }
+/*Welcome box with picture start*/
 .container-fluid{
   background-color: #1a1a1a;
   margin: 0;
@@ -50,6 +51,8 @@ color: white;
 font-size: 4em;
 -webkit-animation: fadein 12s;
 }
+/*Welcome box with picture end*/
+/*About me content start*/
 .aboutme{
   display: flex;
   background-color: #1a1a1a;
@@ -68,32 +71,76 @@ font-size: 4em;
   font-size: 4em;
   margin-bottom: 2%;
 }
-.skills{
-  height: 100%;
+/*About me content end*/
+/*My skills start*/
+* {box-sizing:border-box}
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  background-color: white:
+}
+.mySlides {
+    display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 45px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
   width: 100%;
+  text-align: center;
 }
-.skillscontent{
-  display: flex;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
-  background-color: #404040;
+.dot {
+  cursor:pointer;
+  height: 25px;
+  width: 25px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
-.html1{
-  width: 25%;
-  height: 370px;
-  margin-top: 150px;
+.active, .dot:hover {
+  background-color: #717171;
 }
-.css1{
-  width: 25%;
-  height: 370px;
-  margin-top: 150px;
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation: fade 2s 1 forwards;
 }
-.js1{
-  width: 25%;
-  height: 370px;
-  margin-top:150px;
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/*My skills End*/
+/*Mobile responsive start*/
 @media screen and (max-width: 768px) {
 .picturetext1{
 font-size: 5em;
@@ -101,13 +148,6 @@ font-size: 5em;
 .picturetext2{
 font-size: 2em;
 top: 50%;
-}
-.skillscontent img{
-  position: sticky;
-  height: 23%;
-  width: 13%;
-  margin-top: 20%;
-  margin-bottom: 2%;
 }
 }
 @media screen and (max-width: 768px) {
@@ -161,3 +201,4 @@ font-size: 1.5em;
 top: 56%;
 }
 }
+/*Mobile responsive end*/
