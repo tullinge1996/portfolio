@@ -79,6 +79,7 @@ font-size: 4em;
   position: relative;
   margin: auto;
   background-color: white:
+
 }
 .mySlides {
     display: none;
@@ -104,26 +105,13 @@ font-size: 4em;
   background-color: rgba(0,0,0,0.8);
 }
 .text {
-  color: black;
-  font-size: 15px;
+  color: white;
+  font-size: 12em;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  bottom: 32%;
   width: 100%;
   text-align: center;
-}
-.dot {
-  cursor:pointer;
-  height: 25px;
-  width: 25px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active, .dot:hover {
-  background-color: #717171;
 }
 .fade {
   -webkit-animation-name: fade;
