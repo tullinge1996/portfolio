@@ -9,13 +9,9 @@ html, body {
   background-color: #1a1a1a;
   margin: 0;
 }
-.picture-box{
-width: 100%;
-height: 100%;
-}
 .picture-box img{
-width: 100%;
-height: 100%;
+box-sizing: border-box;
+max-width: 100%;
 font-size: 21px;
 text-align: center;
 -webkit-animation: fadein 4s;
@@ -23,15 +19,6 @@ text-align: center;
 @keyframes fadein {
 from { opacity: 0; }
 to   { opacity: 1; }
-}
-.aboutmecontent1 img{
-position: sticky;
-width: 380px;
-height: 320px;
-border-radius: 50%;
-filter: grayscale(100%);
-margin-top: 10%;
-margin-bottom: 2%;
 }
 .picturetext1{
 position: absolute;
@@ -58,7 +45,9 @@ font-size: 4em;
   background-color: #1a1a1a;
   width: 100%;
   justify-content: center;
-
+    border-top: 20px solid black;
+  border-bottom: 20px solid black;
+  margin-top: -20px;
 }
 .aboutmecontent1{
   width: 60%;
@@ -66,6 +55,15 @@ font-size: 4em;
   color: white;
   font-size: 1.2em;
   padding-bottom: 245px;
+}
+.aboutmecontent1 img{
+position: sticky;
+width: 380px;
+height: 320px;
+border-radius: 50%;
+filter: grayscale(100%);
+margin-top: 10%;
+margin-bottom: 2%;
 }
 .aboutmecontent1 h1{
   font-size: 4em;
@@ -79,7 +77,6 @@ font-size: 4em;
   position: relative;
   margin: auto;
   background-color: white:
-
 }
 .mySlides {
     display: none;
@@ -128,8 +125,17 @@ font-size: 4em;
   to {opacity: 1}
 }
 /*My skills End*/
+/*Footer/contact start*/
+.footer{
+  box-sizing: border-box;
+  background-color: #1a1a1a;
+  border-top: 20px solid black;
+  width: 100%;
+  height: 30%
+}
+/*Footer/contact end*/
 /*Mobile responsive start*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 .picturetext1{
 font-size: 5em;
 }
@@ -137,14 +143,8 @@ font-size: 5em;
 font-size: 2em;
 top: 50%;
 }
-}
-@media screen and (max-width: 768px) {
-.picturetext1{
-font-size: 5em;
-}
-.picturetext2{
-font-size: 1.5em;
-top: 50%;
+.picture-box{
+  padding-top: 225px;
 }
 }
 @media screen and (max-width: 640px) {
