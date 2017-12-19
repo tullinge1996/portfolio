@@ -27,16 +27,7 @@ left: 50%;
 transform: translate(-50%, -50%);
 color: white;
 font-size: 8em;
--webkit-animation: fadein 12s;
-}
-.picturetext2{
-position: absolute;
-top: 55%;
-left: 50%;
-transform: translate(-50%, -50%);
-color: white;
-font-size: 4em;
--webkit-animation: fadein 12s;
+-webkit-animation: fadein 8s;
 }
 /*Welcome box with picture end*/
 /*About me content start*/
@@ -47,7 +38,6 @@ font-size: 4em;
   justify-content: center;
     border-top: 20px solid black;
   border-bottom: 20px solid black;
-  margin-top: -20px;
 }
 .aboutmecontent1{
   width: 60%;
@@ -106,7 +96,7 @@ margin-bottom: 2%;
   font-size: 12em;
   padding: 8px 12px;
   position: absolute;
-  bottom: 32%;
+  bottom: 27%;
   width: 100%;
   text-align: center;
 }
@@ -127,21 +117,34 @@ margin-bottom: 2%;
 /*My skills End*/
 /*Footer/contact start*/
 #footer{
-  box-sizing: border-box;
   background-color: #1a1a1a;
   border-top: 20px solid black;
   width: 100%;
-  height: 30%
+  height: 30%;
+}
+.contact {
+  color: #fff;
+}
+
+.contact p {
+  display: flex;
+  font-weight: 300;
+  font-size: 20px;
+  justify-content: center;
+  padding-top: 40px;
 }
 /*Footer/contact end*/
 /*Mobile responsive start*/
+@media screen and (max-width: 850px){
+  .text{
+    bottom: 25%;
+    font-size: 8em
+  }
+}
 @media screen and (max-width: 767px) {
 .picturetext1{
 font-size: 5em;
-}
-.picturetext2{
-font-size: 2em;
-top: 50%;
+padding-top: 250px;
 }
 .picture-box{
   padding-top: 225px;
@@ -157,6 +160,14 @@ top: 50%;
   margin-top: 7%;
   margin-bottom: 5%;
 }
+.picturetext1{
+font-size: 4em;
+padding-top: 100px;
+}
+.text{
+  bottom: 17%;
+  font-size: 8em
+}
 }
 @media screen and (max-width: 500px) {
 .aboutmecontent1 img{
@@ -168,25 +179,35 @@ filter: grayscale(100%);
 margin-top: 7%;
 margin-bottom: 5%;
 }
-.picturetext2{
-font-size: 2em;
-top: 53%;
-}
 .aboutmecontent1 p{
 font-size: 0.7em;
 }
 .aboutmecontent1 h1{
   font-size: 2.5em;
 }
-}
-@media screen and (max-width: 353px) {
 .picturetext1{
 font-size: 4em;
-top: 50%;
+padding-top: 100px;
 }
-.picturetext2{
-font-size: 1.5em;
-top: 56%;
+.text{
+  bottom: 15%;
+  font-size: 6em
+}
+}
+@media screen and (max-width: 375px) {
+.picturetext1{
+font-size: 4em;
+padding-top: 100px;
+}
+.text{
+  bottom: 12%;
+  font-size: 5em
+}
+}
+@media screen and (max-width: 360px) {
+.picturetext1{
+font-size: 4em;
+padding-top: 50px;
 }
 }
 /*Mobile responsive end*/
