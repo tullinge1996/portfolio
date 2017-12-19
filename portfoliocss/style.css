@@ -40,7 +40,7 @@ font-size: 4em;
 }
 /*Welcome box with picture end*/
 /*About me content start*/
-.aboutme{
+#aboutme{
   display: flex;
   background-color: #1a1a1a;
   width: 100%;
@@ -72,7 +72,7 @@ margin-bottom: 2%;
 /*About me content end*/
 /*My skills start*/
 * {box-sizing:border-box}
-.slideshow-container {
+#slideshow-container {
   max-width: 100%;
   position: relative;
   margin: auto;
@@ -126,7 +126,7 @@ margin-bottom: 2%;
 }
 /*My skills End*/
 /*Footer/contact start*/
-.footer{
+#footer{
   box-sizing: border-box;
   background-color: #1a1a1a;
   border-top: 20px solid black;
