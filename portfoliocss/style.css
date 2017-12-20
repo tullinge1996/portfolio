@@ -132,8 +132,6 @@ margin-bottom: 2%;
 }
 
 .contact p {
-  display: flex;
-  font-weight: 300;
   font-size: 20px;
   padding-top: 40px;
 }
@@ -207,6 +205,7 @@ padding-top: 100px;
   bottom: 12%;
   font-size: 5em
 }
+
 }
 @media screen and (max-width: 360px) {
 .picturetext1{
