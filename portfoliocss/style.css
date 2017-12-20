@@ -202,9 +202,12 @@ font-size: 4em;
 padding-top: 100px;
 }
 .text{
-  bottom: 17%;
+  bottom: 23%;
   font-size: 5em
+}.prev, .next {
+  top: 38%;
 }
+
 
 }
 @media screen and (max-width: 360px) {
